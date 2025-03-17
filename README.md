@@ -1,2 +1,7 @@
 # hse-25-summer
-Coolest uni lecture outside of Stuttgart
+
+## 2025-03-17 Initial session - Distributed Systems & Cloud Introduction
+
+![Brainstorming](/images/2025_03_17_brainstorm.png)
+
+

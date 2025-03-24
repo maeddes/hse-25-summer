@@ -28,7 +28,7 @@ Put your names, repos and technologies into the spreadsheet. Don't reuse technol
    - Configure CORS to allow requests from all origins (note: this approach is temporary and potentially insecure in production environments).
 
 2. **Framework Selection**  
-   - Select a backend framework **other than Spring Boot** (consider using other JVM frameworks like Micronaut or Quarkus).
+   - Select a backend framework **other than Spring Boot** (consider using other JVM frameworks like Micronaut or Quarkus) and **Express.js**.
 
 3. **Documentation and Status Codes**
    - Implement in-code documentation using Swagger or a similar API documentation tool.

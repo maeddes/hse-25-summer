@@ -1,5 +1,7 @@
 # Labs
 
+![Overview](/images/2025_03_24_labs.png)
+
 ## **Lab Instructions: Distributed Application Development**
 
 In this lab, you will design and implement either a frontend or backend application using your chosen framework, adhering to core principles of distributed systems and cloud-native development. Follow the instructions carefully, ensuring proper external configuration and applying the 12-factor methodology.

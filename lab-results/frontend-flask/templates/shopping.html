@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .btn-danger {
+            background-color: #f44336;
+        }
+        .btn-danger:hover {
+            background-color: #d32f2f;
+        }
+        .btn-secondary {
+            background-color: #2196F3;
+        }
+        .btn-secondary:hover {
+            background-color: #0b7dda;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .flash-messages {
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        .flash-message {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            list-style: none;
+        }
+        .flash-success {
+            background-color: #dff0d8;
+            color: #3c763d;
+            border: 1px solid #d6e9c6;
+        }
+        .flash-error {
+            background-color: #f2dede;
+            color: #a94442;
+            border: 1px solid #ebccd1;
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .actions {
+            white-space: nowrap;
+        }
+        .api-status {
+            font-size: 12px;
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping List</h1>
+        <nav>
+            <a href="/" class="btn btn-secondary">Home</a>
+            <a href="/add" class="btn">Add Item</a>
+        </nav>
+    </header>
+    
+    {% if get_flashed_messages() %}
+    <ul class="flash-messages">
+        {% for category, message in get_flashed_messages(with_categories=true) %}
+        <li class="flash-message flash-{{ category }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    
+    <main>
+        {% if page == 'index' %}
+            <h2>My Items</h2>
+            
+            {% if items %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in items %}
+                    <tr>
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.quantity }}</td>
+                        <td class="actions">
+                            <a href="/edit/{{ item.id }}" class="btn btn-secondary">Edit</a>
+                            <a href="/delete/{{ item.id }}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this item?')">Delete</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p>No items found. Click "Add Item" to create your first item.</p>
+            {% endif %}
+        {% elif page == 'add' %}
+            <h2>Add New Item</h2>
+            
+            <form method="post">
+                <div>
+                    <label for="name">Item Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Add Item</button>
+                    <a href="/" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+        {% elif page == 'edit' %}
+            <h2>Edit Item</h2>
+            
+            <form method="post">
+                <div>
+                    <label for="name">Item Name:</label>
+                    <input type="text" id="name" name="name" value="{{ item.name }}" required>
+                </div>
+                <div>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="{{ item.quantity }}" min="1" required>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Update Item</button>
+                    <a href="/" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+        {% endif %}
+    </main>
+    
+    <footer>
+        <div class="api-status">
+            API Server: {{ api_server_url }}
+        </div>
+    </footer>
+</body>
+</html>
+    

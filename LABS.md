@@ -1,5 +1,8 @@
 # Labs
 
+## Team size
+up to 2 persons
+
 ![Overview](/images/2025_03_24_labs.png)
 
 ## **Lab Instructions: Distributed Application Development**

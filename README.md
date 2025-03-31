@@ -29,6 +29,7 @@
 ### **Learning Objectives**
 By the end of this lecture, students will be able to:
 - Distinguish between distributed and non-distributed systems
+- Explain the importance of heterogeneity and resilience as key drivers for distributed systems.
 - Describe the NIST cloud definition and its significance in the modern cloud landscape.
 - Identify the major cloud providers and tell about their evolution.
 - Differentiate between cloud service models and discuss their evolution, including modern abstraction models like CaaS.
@@ -44,3 +45,53 @@ By the end of this lecture, students will be able to:
 ### **Suggested Reading & Resources**
 - [NIST 2011 Cloud Computing Definition](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf)
 - CNCF [Cloud Native Landscape](https://landscape.cncf.io/)
+
+## **2025 / 03 / 24 - Recap Distributed Systems & Cloud **  
+
+### **Content Overview**
+1. **The NIST Cloud Definition (2011)** 
+2. **Overview of Major Cloud Providers**
+   - Key players in the cloud space (AWS, Azure, Google Cloud, etc.).
+   - Comparing evolution.
+
+3. **Cloud Service/Abstraction Models**
+4. **Introduction to CNCF**
+   - Role of the Cloud Native Computing Foundation (CNCF) in the cloud ecosystem.
+   - CNCF Landscape: technologies, tools, and projects.
+
+5. **Popular CNCF Technologies**
+   - **Kubernetes**: Container orchestration in cloud-native environments.
+   - **eBPF**: Extending kernel capabilities for monitoring and security.
+   - **OpenTelemetry**: Observability standards and practices in modern cloud systems.
+
+---
+
+## **2025 / 03 / 24 - Cloud-based IDEs**
+
+### **Content Overview**
+
+1. **Overview of Cloud-Based IDEs**
+   - Introduction to cloud-based integrated development environments (IDEs).
+   - **GitHub Codespaces**: Full development environments in the cloud.
+   - **Google IDX**: Automating and provisioning cloud-based workspaces for development.
+   - Benefits of cloud-based IDEs for distributed systems development.
+
+---
+
+### **Learning Objectives**
+By the end of this lecture, students will be able to:
+
+- Explain the advantages of using cloud-based IDEs, such as GitHub Codespaces and Gitpod, for distributed system development.
+- Demonstrate an understanding of how these tools enhance collaboration and scalability in cloud-native environments.
+
+---
+
+### **Student/Review Questions**
+1. Analyze GitHub Codespaces and Gitpod. What are the key features that make them suitable for developing distributed systems?
+2. What are the main benefits of using cloud-based IDEs compared to traditional, local development environments?
+
+---
+
+### **Suggested Reading & Resources**
+- [GitHub Codespaces Documentation](https://github.com/features/codespaces)
+- [IDX Website](https://idx.dev/)

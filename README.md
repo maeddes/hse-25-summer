@@ -37,7 +37,8 @@ By the end of this lecture, students will be able to:
 ### **Student/Review Questions**
 - What are the five essential characteristics of cloud computing according to NIST, and how do they apply to modern cloud services?
 - Identify 3 main cloud providers and list their most important services
-- What are the differences between IaaS, PaaS, and SaaS? Give examples of each in today's cloud ecosystem.- What is the CNCF, and why is it important in the context of cloud-native technologies?
+- What are the differences between IaaS, PaaS, and SaaS? Give examples of each in today's cloud ecosystem.
+- What is the CNCF, and why is it important in the context of cloud-native technologies?
 - Describe 3 of the fallacies of distributed computing
 
 ---

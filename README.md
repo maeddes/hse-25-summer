@@ -82,13 +82,13 @@ By the end of this lecture, students will be able to:
 ### **Learning Objectives**
 By the end of this lecture, students will be able to:
 
-- Explain the advantages of using cloud-based IDEs, such as GitHub Codespaces and Gitpod, for distributed system development.
+- Explain the advantages of using cloud-based IDEs, such as GitHub Codespaces and IDX, for distributed system development.
 - Demonstrate an understanding of how these tools enhance collaboration and scalability in cloud-native environments.
 
 ---
 
 ### **Student/Review Questions**
-1. Analyze GitHub Codespaces and Gitpod. What are the key features that make them suitable for developing distributed systems?
+1. Analyze GitHub Codespaces and IDX. What are the key features that make them suitable for developing distributed systems?
 2. What are the main benefits of using cloud-based IDEs compared to traditional, local development environments?
 
 ---

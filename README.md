@@ -46,7 +46,7 @@ By the end of this lecture, students will be able to:
 - [NIST 2011 Cloud Computing Definition](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf)
 - CNCF [Cloud Native Landscape](https://landscape.cncf.io/)
 
-## **2025 / 03 / 24 - Recap Distributed Systems & Cloud **  
+## **2025 / 03 / 24 - Recap Distributed Systems & Cloud**  
 
 ### **Content Overview**
 1. **The NIST Cloud Definition (2011)** 

@@ -146,7 +146,7 @@ By the end of this lecture, students will be able to:
    - handling of all application containers through same mechanisms: docker build, docker run
 
 3. **Docker**
-   - Docker ecosystem consists of the Docker Daemon, Docker CLI and Docker Hub+
+   - Docker ecosystem consists of the Docker Daemon, Docker CLI and Docker Hub
    - Creation of Dockerfiles
    - Building Images - Understanding the layer concept in container images
    - Running Containers
@@ -159,7 +159,7 @@ By the end of this lecture, students will be able to:
 4. How does Docker ensure isolation and security between containers?
 5. What is a container registry, and how do you use Docker Hub to share or deploy images?
 6. Describe the process of building and running a containerized application using Docker, including common commands.
-7. In which way does Docker Compose use existing fuctionality and in which way does it extend it?
+7. In which way does Docker Compose use existing fuctionality and in which way does it extend it?.
 
 ### Homework
 - Get a Docker account

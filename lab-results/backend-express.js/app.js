@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // In-memory database for demo purposes
+// Potentially running into inconsistent data when scaling
 let items = [
   { id: 1, name: 'Apples', quantity: 5 },
   { id: 2, name: 'Bread', quantity: 2 },

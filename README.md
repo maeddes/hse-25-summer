@@ -186,6 +186,8 @@ By the end of this lecture, students will be able to:
 
 ---
 
+![CAP theorem](images/2025_04_14_CAP.png)
+
 ### **Student/Review Questions**
 
 1. What does the CAP Theorem state, and why is it relevant for distributed systems?  

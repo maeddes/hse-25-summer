@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   frontend:
-    image: hse-frontend:flask-alt
+    image: maeddes/hse25frontend:flask
     container_name: frontend
     ports:
     - 5000:5000

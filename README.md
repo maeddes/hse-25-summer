@@ -97,9 +97,6 @@ By the end of this lecture, students will be able to:
 - [GitHub Codespaces Documentation](https://github.com/features/codespaces)
 - [IDX Website](https://idx.dev/)
 
-
-Great! Here's your lecture documentation in the usual structure:
-
 ---
 
 ## **2025 / 03 / 31 - Distributed Systems & Cloud-native Theory**
@@ -131,7 +128,7 @@ By the end of this lecture, students will be able to:
 5. Why is configuration management especially important in a distributed environment?  
 6. How do deployment practices like blue-green deployments contribute to system resilience?  
 
-## **2025 / 01 / 07 - Containers & Docker**
+## **2025 / 04 / 07 - Containers & Docker**
 
 ### Content Overview
 
@@ -165,3 +162,42 @@ By the end of this lecture, students will be able to:
 - Get a Docker account
 - Add Containerization to your Lab project
 
+## **2025 / 04 / 14 - CAP Theorem, scalability, state, persistence**
+
+![Brainstorming](images/2025_04_14_scalability_persistence.png)
+
+---
+
+### **Content Overview**
+
+This lecture explored the theoretical and practical aspects of **data persistence** and **scalability** in distributed systems.  
+We revisited the **CAP Theorem** to understand the trade-offs between consistency, availability, and partition tolerance. Students compared **scale-up** (vertical scaling) vs. **scale-out** (horizontal scaling) strategies.  
+The differences between **in-memory persistence** and **real database persistence** were illustrated through examples using **Spring Data JPA** with **H2 (in-memory)** and **PostgreSQL (external database)**.
+
+---
+
+### **Learning Objectives**
+
+By the end of this lecture, students will be able to:  
+1. Explain the CAP Theorem and the implications for distributed system design.  
+2. Differentiate between scale-up and scale-out approaches and recognize their trade-offs.  
+3. Compare in-memory persistence with external database persistence in terms of simplicity, performance, and scalability.  
+4. Why did the CAP theorem become so relevant in the last decade even though it already exists since 1990?
+
+---
+
+![CAP theorem](images/2025_04_14_CAP.png)
+
+### **Student/Review Questions**
+
+1. What does the CAP Theorem state, and why is it relevant for distributed systems?  
+2. What are the key differences between scaling up and scaling out? Provide examples of each.  
+3. What are the pros and cons of using an in-memory database like H2 compared to a full external database like PostgreSQL?  
+4. How does Spring Data JPA help simplify database interactions in a Java application?  
+5. Why might an application start with in-memory persistence during development but move to an external database later?
+
+---
+
+## **2025 / 04 / 28 - Onsite Lab Session**
+
+## **2025 / 05 / 05 - API and REST**

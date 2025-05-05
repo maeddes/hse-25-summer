@@ -22,6 +22,8 @@ Put your names, repos and technologies into the spreadsheet. Don't reuse technol
    - **12-Factor Principles**: Apply 12-factor app methodology, and document your approach for each factor applied.
    - **Documentation**: Comment your code and write a short summary explaining how you applied the 12-factor principles.
 
+![Overview](images/2025_04_14_lab_stuff.png)
+
 3. **Containerization**
    - **Docker**: Write Dockerfiles to containerize your application.
    - **Docker Compose**: Set up a `docker-compose.yml` file to define and run multi-container Docker applications.

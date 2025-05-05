@@ -198,3 +198,6 @@ By the end of this lecture, students will be able to:
 
 ---
 
+## **2025 / 04 / 28 - Onsite Lab Session**
+
+## **2025 / 05 / 05 - API and REST**

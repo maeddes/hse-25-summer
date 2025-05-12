@@ -66,5 +66,6 @@ Put your names, repos and technologies into the spreadsheet. Don't reuse technol
 4. If applicable, Kubernetes manifest files.
 5. Code documentation (comments and/or README).
    a. Provide instructions how to build, containerize and test app
+6. Provide a public link to the container image
 
 ---

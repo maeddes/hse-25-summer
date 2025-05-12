@@ -201,3 +201,27 @@ By the end of this lecture, students will be able to:
 ## **2025 / 04 / 28 - Onsite Lab Session**
 
 ## **2025 / 05 / 05 - API and REST**
+
+![image](https://github.com/user-attachments/assets/9257f225-430e-471e-8be6-f428ae8cfe6f)
+
+### **Content Overview**
+
+This lecture aimed to explore common principles of establishing communication between distributed applications.
+We introduced the foundational principles and real-world application of RESTful APIs in distributed systems.
+While the communication interface can be implemented freely in a multitude of ways, the **REST** architectural style provides guidelines for implementation focusing on concepts such as stateless communication, resource-based URIs, and the use of HTTP methods (GET, POST, PUT, DELETE).
+
+
+### Learning Objectives
+By the end of this lecture, students will be able to:
+1. Define REST and explain its significance in distributed system design.
+2. Identify the key components of RESTful APIs (Resources, Verbs, Representations.
+3. Use appropriate HTTP methods and status codes in REST API design.
+4. Identify the Maturity of an API via the Richardson Maturity Model
+
+### Student/Review Questions
+
+1. What are the main constraints that define a RESTful system?
+2. When should you use each of the HTTP methods: GET, POST, PUT, DELETE?
+3. What is idempotency, and why is it important in REST APIs?
+
+

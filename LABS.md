@@ -27,7 +27,7 @@ Put your names, repos and technologies into the spreadsheet. Don't reuse technol
 3. **Containerization**
    - **Docker**: Write Dockerfiles to containerize your application.
    - **Docker Compose**: Set up a `docker-compose.yml` file to define and run multi-container Docker applications.
-   - **Kubernetes**: After Docker, create Kubernetes manifests (deployment files) for deploying your application in a Kubernetes environment.
+   - **Kubernetes**: After Docker, create Kubernetes manifests for deploying your application in a Kubernetes environment. This means a deployment and a service configuration for each involved component. (in case of backend, it's backend and database, in case of frontend, it's only frontend).
 
 ### **Server-Side/Backend Instructions**
 

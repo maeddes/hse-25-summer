@@ -255,4 +255,39 @@ By the end of this lecture, students will be able to:
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 - [Richardson's Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
 
-## **2025 / 05 / 12 - Introduction to Kubernetes
+## **2025 / 05 / 12 & 19 - Introduction to Kubernetes and practical demo
+
+### Content Overview
+
+In the theoretical overview, we explored the architecture and core concepts of Kubernetes, focusing on its role in automating deployment, scaling, and management of containerized applications. Key elements such as the control plane, nodes, pods, deployments and services were discussed in relation to how Kubernetes maintains desired state and ensures high availability.
+
+1. Kubernetes Basics: Overview of Kubernetes as a container orchestration platform, its control plane and worker node architecture.
+2. Pods: Understanding the smallest deployable units in Kubernetes and their lifecycle.
+3. Deployments: Declarative management of pod replicas, rolling updates, and self-healing mechanisms.
+4. Services: Abstracting access to pods through stable network endpoints (ClusterIP, NodePort, LoadBalancer).
+
+The second session focused on hands-on experience through a live demonstration. Students learned how to define and deploy applications using Kubernetes manifests, written in YAML. We created and explored the behavior of Pods, Deployments, and Services, highlighting their roles in workload management, scaling, and exposing applications.
+Using kubectl, we interacted directly with the cluster—applying manifests, inspecting resources, viewing logs, and debugging running containers.
+
+- Creating Kubernetes Manifests - YAML Syntax and Structure: Crafting Kubernetes resource definitions in YAML.
+- Interacting with the Cluster using kubectl
+- Resource Management: Creating, updating, and deleting resources using kubectl apply, kubectl delete, and kubectl get.
+- Inspection and Debugging: Using kubectl describe, kubectl logs, and kubectl exec to understand application and cluster state.
+
+
+### Objectives and Exercises
+Students should be able to:
+- Understand the role and structure of core Kubernetes objects like Pods, Deployments, and Services.
+- Write valid Kubernetes manifests in YAML and apply them to a cluster.
+- Use kubectl to create, inspect, and manage resources in a Kubernetes environment.
+- Expose applications using Services and debug issues using common kubectl commands.
+
+### Student / Review Questions
+- What is a Kubernetes Pod, and how does it differ from a container?
+- Explain the purpose of a Deployment in Kubernetes. How does it help manage application availability?
+- What are the differences between the Service types: ClusterIP, NodePort, and LoadBalancer?
+- How does kubectl apply differ from kubectl run or kubectl create, and when should you use each?
+- What are labels and selectors used for in Kubernetes manifests?
+- How can you inspect the logs of a container running in a Pod?
+- Why is YAML used for Kubernetes configuration, and what are some common pitfalls to avoid?
+

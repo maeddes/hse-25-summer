@@ -255,7 +255,7 @@ By the end of this lecture, students will be able to:
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 - [Richardson's Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
 
-## **2025 / 05 / 12 & 19 - Introduction to Kubernetes and practical demo
+## **2025 / 05 / 12 - Introduction to Kubernetes and practical demo**
 
 ### Content Overview
 
@@ -290,4 +290,70 @@ Students should be able to:
 - What are labels and selectors used for in Kubernetes manifests?
 - How can you inspect the logs of a container running in a Pod?
 - Why is YAML used for Kubernetes configuration, and what are some common pitfalls to avoid?
+
+
+## **2025 / 05 / 19 - Kubernetes and practical demo**
+
+### Recap and relationship of important API objects
+
+![K8s objects relationships](images/2024_12_13_Kubernetes_API_Object_Relationships.png)
+
+### Defining a multi-application Kubernetes configuration - making things run and communicate
+
+![K8s multi object definition](images/2024_12_13_Kubernetes_Multi_App_Definition.png)
+
+### **Content Overview**  
+
+This lecture provides an introduction to Kubernetes deployment options and revisits essential Kubernetes API objects in greater detail. Students will explore free Kubernetes trials offered by major cloud providers, local deployment tools like Minikube and Kind, and how to use Kubernetes in cloud-based IDEs like GitHub Codespaces. The session also deepens understanding of fundamental API objects such as Pods, Deployments, and Services, equipping students with practical knowledge for managing containerized applications in Kubernetes.  
+
+---
+
+### **Learning Objectives**  
+
+By the end of this lecture, students will be able to:  
+
+1. Set up a Kubernetes cluster locally using tools like Minikube or Kind, and within GitHub Codespaces.  
+2. Describe the roles and relationships of basic Kubernetes API objects, including Pods, Deployments, and Services.  
+3. Deploy and manage containerized applications using Kubernetes API objects.  
+
+---  
+
+### **Student/Review Questions**  
+
+1. What are the advantages and limitations of using Kubernetes free trials from cloud providers compared to local tools like Minikube?  
+2. How does Minikube enable Kubernetes functionality within a GitHub Codespaces environment?  
+3. What is the role of a Pod in Kubernetes, and how does it differ from a Deployment?  
+4. How do Services enable communication between Kubernetes Pods and external clients?  
+5. How can you use a Deployment to ensure high availability for an application in Kubernetes? 
+
+## **2024-12-20 Kubernetes Behaviour & Networking**
+
+![Scenario 1](images/2024_12_20_Kubernetes_Scenarios_Recovery_From_Failure.png)
+
+![Scenario 2](images/2024_12_20_Kubernetes_Scenarios_Load_Balancing.png)
+
+![Scenario 3](images/2024_12_20_Kubernetes_Scenarios_Zero_Downtime_Update.png)
+
+### **Content Overview**  
+
+In this final Kubernetes lecture, wd explored key concepts to manage and scale applications effectively. The lecture covered the three main Kubernetes Service types—ClusterIP, NodePort, and LoadBalancer—and their use cases. Students also learned how to scale instances in a Deployment, achieving automatic load-balancing across Pods using a ClusterIP Service. The session demonstrated how Kubernetes handles automatic updates of applications through rolling updates in Deployments and how it ensures high availability by automatically recovering failed instances.  
+
+---  
+### **Learning Objectives**  
+
+By the end of this lecture, students will be able to:  
+1. Differentiate between the three main Kubernetes Service types: ClusterIP, NodePort, and LoadBalancer.  
+2. Scale a Kubernetes Deployment to handle increased load and distribute traffic automatically across instances.  
+3. Implement rolling updates in a Deployment to update applications without downtime.  
+4. Explain how Kubernetes ensures application stability by automatically recovering from Pod failures.  
+
+---  
+### **Student/Review Questions**  
+
+1. What are the differences between ClusterIP, NodePort, and LoadBalancer Services in Kubernetes?  
+2. How does Kubernetes automatically distribute incoming traffic across multiple instances in a Deployment?  
+3. How can you scale a Deployment to add more instances of your application?  
+4. What is a rolling update in Kubernetes, and why is it important for managing application updates?  
+5. How does Kubernetes detect and recover from crashed or failed Pods automatically?  
+6. Why is load-balancing critical in distributed systems, and how does Kubernetes achieve this with Services?  
 

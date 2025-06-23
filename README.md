@@ -320,7 +320,7 @@ By the end of this lecture, students will be able to:
 
 ### **Student/Review Questions**  
 
-1. What are the advantages and limitations of using Kubernetes free trials from cloud providers compared to local tools like Minikube?  
+1. :-) 
 2. How does Minikube enable Kubernetes functionality within a GitHub Codespaces environment?  
 3. What is the role of a Pod in Kubernetes, and how does it differ from a Deployment?  
 4. How do Services enable communication between Kubernetes Pods and external clients?  

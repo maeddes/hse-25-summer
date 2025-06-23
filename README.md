@@ -361,7 +361,7 @@ Here is a lecture documentation summary in your preferred format:
 
 ---
 
-## **2024-12-26 Distributed patterns compared: Frameworks vs. K8s vs. Service Mesh vs. eBPF**
+## **2025-05-26 Distributed patterns compared: Frameworks vs. K8s vs. Service Mesh vs. eBPF**
 
 ### **Content Overview**
 

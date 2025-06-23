@@ -397,4 +397,4 @@ By the end of this lecture, students will be able to:
 6. What are the **pros and cons** of implementing distributed patterns at the framework level versus at the platform level?
 7. Why is **build-time vs. runtime coupling** relevant when comparing these technologies?
 
-Let me know if you'd like a visual diagram to accompany this (e.g., a layered architecture view).
+No deep-level knowledge about Service Mesh and eBPF expected. Only the high-level idea why they exist and what the core differences to plain Kubernetes are.
